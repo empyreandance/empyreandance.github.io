@@ -1,0 +1,37 @@
+/* full‑viewport centered flex layout */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background: #333;
+  color: #fff;
+}
